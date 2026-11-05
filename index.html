@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clementine — in-between</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Special+Elite&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             HERO SECTION             ║
+       ╚══════════════════════════════════════╝ -->
+  <div class="hero" id="hero">
+    <div class="tile-bg"></div>
+
+    <!-- Animated rainbow wave at bottom of hero -->
+    <svg class="rainbow-wave" id="rainbowWave" viewBox="0 0 1200 420"
+         preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,160 Q150,60 300,160 Q450,260 600,160 Q750,60 900,160 Q1050,260 1200,160 L1200,420 L0,420Z" fill="#f4a0b0" opacity=".85"/>
+      <path d="M0,190 Q150,90 300,190 Q450,290 600,190 Q750,90 900,190 Q1050,290 1200,190 L1200,420 L0,420Z" fill="#f8d090" opacity=".75"/>
+      <path d="M0,220 Q150,120 300,220 Q450,320 600,220 Q750,120 900,220 Q1050,320 1200,220 L1200,420 L0,420Z" fill="#a8d8a8" opacity=".7"/>
+      <path d="M0,250 Q150,150 300,250 Q450,350 600,250 Q750,150 900,250 Q1050,350 1200,250 L1200,420 L0,420Z" fill="#a8c8f0" opacity=".65"/>
+      <path d="M0,280 Q150,180 300,280 Q450,380 600,280 Q750,180 900,280 Q1050,380 1200,280 L1200,420 L0,420Z" fill="#c8a8e0" opacity=".6"/>
+      <path d="M0,310 Q150,220 300,310 Q450,400 600,310 Q750,220 900,310 Q1050,400 1200,310 L1200,420 L0,420Z" fill="#f0b8a0" opacity=".5"/>
+    </svg>
+
+    <h1 class="hero-title">Clementine</h1>
+    <p class="hero-sub">✦ in-between ✦</p>
+
+    <div class="scroll-hint">
+      <span>scroll to explore</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║           CHARACTER BIO              ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="bio-sec" id="bio">
+    <span class="section-title" id="bioTitle">Character Bio</span>
+
+    <div class="bio-layout">
+
+      <!-- ID Card -->
+      <div class="id-card" id="idCard">
+        <div class="id-top">
+          <span>✦ MAGIC CAFÉ — ID ✦</span>
+          <div class="barcode">
+            <div style="width:3px"></div><div style="width:2px"></div>
+            <div style="width:5px"></div><div style="width:2px"></div>
+            <div style="width:4px"></div><div style="width:3px"></div>
+            <div style="width:2px"></div><div style="width:5px"></div>
+          </div>
+        </div>
+        <div class="id-body">
+          <!-- ★ Replace profile.jpg with your character image ★ -->
+          <div class="id-photo">
+            <img src="images/profile.jpg" alt="Clementine" />
+          </div>
+          <div class="id-info">
+            <div class="id-field"><label>Name</label><span>Clementine</span></div>
+            <div class="id-field"><label>Surname</label><span>Citrus</span></div>
+            <div class="id-field"><label>Occupation</label><span>Masters Student</span></div>
+            <div class="id-field"><label>Status</label><span>thinking about dissertation ✦</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strengths & Weaknesses menu card -->
+      <div class="menu-card" id="menuCard">
+        <div class="menu-ornament">✦ ─────────────── ✦</div>
+        <div class="menu-title">✦ The Magic Café ✦</div>
+        <div class="menu-subtitle">today's specials — served fresh</div>
+        <hr class="menu-divider" />
+
+        <div class="sw-columns">
+          <!-- Strengths column -->
+          <div>
+            <div class="sw-col-head strength">🌿 Strengths</div>
+            <div class="sw-entry"><span class="sw-icon">💛</span><span>Deep empathy for everyone around her</span></div>
+            <div class="sw-entry"><span class="sw-icon">💡</span><span>Creative problem solving under pressure</span></div>
+            <div class="sw-entry"><span class="sw-icon">🤝</span><span>Always reliable — shows up every time</span></div>
+            <div class="sw-entry"><span class="sw-icon">🦁</span><span>Brave when it truly matters</span></div>
+          </div>
+          <!-- Weaknesses / Flaws column -->
+          <div>
+            <div class="sw-col-head weakness">🌹 Flaws</div>
+            <div class="sw-entry"><span class="sw-icon">🌀</span><span>Overthinks absolutely everything</span></div>
+            <div class="sw-entry"><span class="sw-icon">🕊️</span><span>Avoids conflict at all costs</span></div>
+            <div class="sw-entry"><span class="sw-icon">🪞</span><span>Crippling self-doubt</span></div>
+            <div class="sw-entry"><span class="sw-icon">🫶</span><span>Puts others before herself, always</span></div>
+          </div>
+        </div>
+
+        <div class="menu-footer-note">✦ All traits served with a little magic ✦</div>
+        <div class="menu-ornament" style="margin-top:12px; margin-bottom:0;">✦ ─────────────── ✦</div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="pdiv"><div class="pdiv-inner" data-p="0.35"></div></div>
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║         CITRUS CAPABILITIES          ║
+       ║           (Stats / Mugs)             ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="stats-sec" id="stats">
+    <span class="section-title" id="statsTitle">Citrus Capabilities</span>
+
+    <p class="rev" style="text-align:center; font-size:1.05rem; color:var(--brown); margin-bottom:40px; font-style:italic;">
+      — hover over a cup to fill it up — the higher the coffee, the higher the stat —
+    </p>
+
+    <div class="mugs-grid" id="mugsGrid">
+
+      <div class="mug-wrap" data-delay="0" data-pct="60">
+        <div class="mug-tip">Strength — 6 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:60%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Strength</div>
+      </div>
+
+      <div class="mug-wrap" data-delay="1" data-pct="80">
+        <div class="mug-tip">Dexterity — 8 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:80%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Dexterity</div>
+      </div>
+
+      <div class="mug-wrap" data-delay="2" data-pct="90">
+        <div class="mug-tip">Intelligence — 9 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:90%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Intelligence</div>
+      </div>
+
+      <div class="mug-wrap" data-delay="3" data-pct="85">
+        <div class="mug-tip">Charisma — 8.5 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:85%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Charisma</div>
+      </div>
+
+      <div class="mug-wrap" data-delay="4" data-pct="70">
+        <div class="mug-tip">Constitution — 7 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:70%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Constitution</div>
+      </div>
+
+      <div class="mug-wrap" data-delay="5" data-pct="75">
+        <div class="mug-tip">Wisdom — 7.5 / 10</div>
+        <div class="mug-outer">
+          <div class="mug-steam"><span></span><span></span><span></span></div>
+          <div class="mug-body">
+            <div class="mug-fill" style="--target-pct:75%; background:linear-gradient(180deg,rgba(150,90,50,.6),rgba(74,42,16,.9));"></div>
+            <div class="mug-sheen"></div>
+          </div>
+          <div class="mug-handle"></div>
+        </div>
+        <div class="mug-label">Wisdom</div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="pdiv"><div class="pdiv-inner" data-p="0.45"></div></div>
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║        CLEMENTINE'S ABILITIES        ║
+       ║   Top-view table, image placeholders ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="abilities-sec" id="abilities">
+    <span class="section-title" id="abilTitle">Clementine's Abilities</span>
+
+    <p class="rev" style="text-align:center; font-size:1rem; color:var(--brown); margin-bottom:30px; font-style:italic;">
+      — click an item on the table to reveal its power —
+    </p>
+
+    <div class="table-scene">
+
+      <!-- Top-view chairs on the LEFT side of the table -->
+      <!-- <div class="chairs-side left-chairs">
+        <div class="chair-topview"></div>
+        <div class="chair-topview"></div>
+      </div> -->
+
+      <!-- The table itself — rounded rectangle, no side panels -->
+      <div class="table-surface rev" id="tableTop">
+
+        <!--
+          ★ ABILITY IMAGES ★
+          Replace each src="ability-X.jpg" with your own image.
+          Keep the data-title, data-desc, and data-img attributes
+          so the popup modal works correctly.
+          The data-img should also point to your image file.
+        -->
+
+        <div class="food-item"
+             data-title="Strength"
+             data-desc="Clementine's greatest strength is her mind. Whether it's research, problem-solving, or pulling an all-nighter — she always delivers. Her focus is almost supernatural."
+             data-img="ability-1.jpg"
+             onclick="showAbility(this)">
+          <div class="ability-img-wrap">
+            <img src="images/laptop.png" alt="Ability 1"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="ability-placeholder">ability-1.jpg</div>
+          </div>
+        </div>
+
+        <div class="food-item"
+             data-title="Helper"
+             data-desc="Clementine is a giver through and through. She always shows up — with help, with kindness — often before you even know you need it."
+             data-img="ability-2.jpg"
+             onclick="showAbility(this)">
+          <div class="ability-img-wrap">
+            <img src="images/biscuits.png" alt="Ability 2"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="ability-placeholder">ability-2.jpg</div>
+          </div>
+        </div>
+
+        <div class="food-item"
+             data-title="Baker"
+             data-desc="Clementine can bake. From scratch, no recipe needed. The kitchen is her happy place — she knows the exact moment a cake is done just by the smell."
+             data-img="ability-3.jpg"
+             onclick="showAbility(this)">
+          <div class="ability-img-wrap">
+            <img src="images/cake.png" alt="Ability 3"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="ability-placeholder">ability-3.jpg</div>
+          </div>
+        </div>
+
+        <div class="food-item"
+             data-title="Focus"
+             data-desc="Once Clementine locks in, the world disappears. Hours pass. Coffee gets cold. Pages fill up. Fuelled by caffeine and sheer determination."
+             data-img="ability-4.jpg"
+             onclick="showAbility(this)">
+          <div class="ability-img-wrap">
+            <img src="images/coffee.png" alt="Ability 4"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="ability-placeholder">ability-4.jpg</div>
+          </div>
+        </div>
+
+      </div><!-- end .table-surface -->
+
+      <!-- Top-view chairs on the RIGHT side of the table -->
+      <!-- <div class="chairs-side right-chairs">
+        <div class="chair-topview"></div>
+        <div class="chair-topview"></div>
+      </div> -->
+
+    </div><!-- end .table-scene -->
+
+    <p class="click-hint rev">✦ click an image to reveal its ability ✦</p>
+  </section>
+
+
+  <!-- Abilities popup modal -->
+  <div class="ability-modal" id="abilModal">
+    <div class="ability-modal-inner">
+      <button class="ability-modal-close" onclick="closeAbility()">✕</button>
+      <!-- ★ Modal image: replace ability-modal.jpg or the JS will use data-img ★ -->
+      <div class="ability-modal-img-wrap">
+        <img id="modalImg" src="images/laptop.png" alt="Ability image"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="ability-modal-img-placeholder" id="modalImgPlaceholder">image placeholder</div>
+      </div>
+      <div class="ability-modal-title" id="modalTitle">Ability</div>
+      <p class="ability-modal-desc" id="modalDesc">Description goes here.</p>
+    </div>
+  </div>
+
+
+  <div class="pdiv"><div class="pdiv-inner" data-p="0.4"></div></div>
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             THE WORLD                ║
+       ║    Café photo + music player         ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="world-sec" id="world">
+    <span class="section-title" id="worldTitle">The World</span>
+
+    <div class="world-content rev" id="worldLayout">
+
+      <!--
+        ★ CAFÉ PHOTO ★
+        Replace src="cafe-world.jpg" with your own café interior photo.
+      -->
+      <div class="world-photo-wrap" id="worldPhotoWrap">
+        <img src="images/restuarant.jpg" alt="Inside the Magic Café"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+
+      </div>
+
+      <!-- Music player button -->
+      <div class="music-player" id="musicPlayer">
+        <button class="music-btn" id="musicBtn" onclick="toggleMusic()" title="Play café jazz">
+          <span class="music-icon" id="musicIcon">♪</span>
+          <span class="music-label" id="musicLabel">Play Café Jazz</span>
+        </button>
+        <div class="music-bars" id="musicBars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <p class="music-hint">✦ Atmosphere from the Magic Café ✦</p>
+        <!-- ★ Place cafe-jazz.mp3 in the same folder as this file ★ -->
+        <audio id="cafeAudio" loop>
+          <source src="cafe-jazz.mp3" type="audio/mpeg" />
+        </audio>
+      </div>
+
+    </div>
+  </section>
+
+
+  <div class="pdiv"><div class="pdiv-inner" data-p="0.3"></div></div>
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             THE OTHERS               ║
+       ║  Hover to reveal · click to meet     ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="others-sec" id="others">
+    <span class="section-title" id="othersTitle">The "Others"</span>
+
+    <p class="rev" style="text-align:center; font-size:1rem; color:var(--brown); margin-bottom:40px; font-style:italic;">
+      — hover to reveal, click to meet them —
+    </p>
+
+    <div class="frames-row rev" id="framesRow">
+
+      <!-- ── LEFT FRAME: The Waiter ── -->
+      <div class="frame-wrap" id="frameWaiter" onclick="openOther('waiter')">
+        <div class="frame-border">
+
+          <!--
+            ★ BEFORE-HOVER image (the "unknown" placeholder).
+            Replace src="unknown-waiter.jpg" with your own image.
+            If the file is missing, a styled silhouette shows instead.
+          -->
+          <div class="frame-unknown" id="unknownWaiter">
+            <img src="images/unknown.jpg" alt="Unknown character"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <!-- <div class="unknown-fallback">
+              <div class="sil-head"></div>
+              <div class="sil-body"></div>
+              <div class="unknown-label">Unknown</div>
+            </div> -->
+          </div>
+
+          <!--
+            ★ AFTER-HOVER image (revealed character).
+            Replace src="waiter-reveal.jpg" with your waiter artwork.
+          -->
+          <div class="frame-reveal" id="revealWaiter">
+            <img src="images/waiter_reveal.jpg" alt="The Waiter"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="reveal-placeholder">waiter-reveal.jpg</div>
+            <!-- <div class="frame-name-tag">The Waiter</div> -->
+          </div>
+
+        </div>
+        <div class="frame-caption">Unknown</div>
+        <div class="frame-hint">hover to reveal · click to meet</div>
+      </div>
+
+      <!-- ── RIGHT FRAME: The Small Boy ── -->
+      <div class="frame-wrap" id="frameBoy" onclick="openOther('boy')">
+        <div class="frame-border">
+
+          <!--
+            ★ BEFORE-HOVER image.
+            Replace src="unknown-boy.jpg" with your own image.
+          -->
+          <div class="frame-unknown" id="unknownBoy">
+            <img src="images/unknown.jpg" alt="Unknown character"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <!-- <div class="unknown-fallback">
+              <div class="sil-head" style="width:52px; height:52px;"></div>
+              <div class="sil-body" style="width:58px; height:70px;"></div>
+              <div class="unknown-label">Unknown</div>
+            </div> -->
+          </div>
+
+          <!--
+            ★ AFTER-HOVER image (revealed character).
+            Replace src="boy-reveal.jpg" with your boy artwork.
+          -->
+          <div class="frame-reveal" id="revealBoy">
+            <img src="images/boy_reveal.jpg" alt="The Small Boy"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="reveal-placeholder">boy-reveal.jpg</div>
+            <!-- <div class="frame-name-tag">The Small Boy</div> -->
+          </div>
+
+        </div>
+        <div class="frame-caption">Unknown</div>
+        <div class="frame-hint">hover to reveal · click to meet</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Character popup modal -->
+  <div class="char-modal" id="charModal">
+    <div class="char-modal-inner" id="charModalInner">
+      <button class="char-modal-close" onclick="closeOther()">✕</button>
+
+      <!--
+        ★ CLICK-POPUP image.
+        The JS sets src from charData[key].img
+        Replace "waiter-popup.jpg" / "boy-popup.jpg" in script.js
+      -->
+      <div class="char-modal-img-wrap">
+        <img id="charModalImg" src="" alt="" />
+        <div class="char-modal-img-placeholder" id="charModalImgPlaceholder">popup image</div>
+      </div>
+
+      <div class="char-modal-info">
+        <div class="char-modal-badge" id="charModalBadge">✦ MAGIC CAFÉ RESIDENT ✦</div>
+        <div class="char-modal-name" id="charModalName"></div>
+        <div class="char-modal-role" id="charModalRole"></div>
+        <hr class="char-modal-line" />
+        <p class="char-modal-desc" id="charModalDesc"></p>
+        <div class="char-modal-tag" id="charModalTag"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pdiv"><div class="pdiv-inner" data-p="0.4"></div></div>
+  <div class="checker"></div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║             ABOUT ME                 ║
+       ║    Paper with polaroid & icons       ║
+       ╚══════════════════════════════════════╝ -->
+  <section class="about-sec" id="about">
+    <span class="section-title" id="aboutTitle">About Me?</span>
+
+    <div class="paper-wrap rev" id="paperWrap">
+      <div class="paper-sheet">
+
+        <!-- Lined paper background (purely decorative CSS) -->
+        <div class="paper-lines"></div>
+        <!-- Red margin line (purely decorative CSS) -->
+        <div class="paper-margin"></div>
+
+
+        <!-- ── LEFT COLUMN: Polaroid only ── -->
+        <div class="paper-left">
+
+          <!--
+            ★ POLAROID ★
+            • Front image (default): replace src="me-front.jpg"
+            • Hover image:           replace src="me-hover.jpg"
+            Both use onerror to show a placeholder if the file is missing.
+          -->
+          <div class="polaroid" id="myPolaroid">
+
+            <!-- Front photo (visible by default) -->
+            <div class="polaroid-front">
+              <img src="images/me_cartoon.jpg" alt="Mpho"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <!-- <div class="polaroid-placeholder">
+                <span>🤳</span>
+                <small>me-front.jpg</small>
+              </div> -->
+            </div>
+
+            <!-- Hover photo (fades in on hover via CSS) -->
+            <div class="polaroid-hover">
+              <img src="images/me_hover.jpg" alt="Mpho (hover)"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+              <!-- <div class="polaroid-placeholder">
+                <span>📸</span>
+                <small>me-hover.jpg</small>
+              </div> -->
+            </div>
+
+            <div class="polaroid-name">Mpho 🌸</div>
+          </div>
+
+        </div><!-- end .paper-left -->
+
+
+        <!-- ── RIGHT COLUMN: Text info + clickable icons ── -->
+        <div class="paper-right">
+
+          <!-- Handwritten-style heading -->
+          <div class="paper-heading">Hi, I'm Mpho! ♡</div>
+
+          <!-- Personal stats written directly on the paper -->
+          <div class="paper-stats">
+            <p class="paper-stat-line">Height — 150 cm 🌸
+              <span class="height-trigger" onclick="showHeightJoke()">( click me )</span>
+            </p>
+            <p class="paper-stat-line">Age — 19 ✨</p>
+          </div>
+
+          <!-- Clickable icon items — images replace the old emoji/flag divs -->
+          <div class="paper-items-grid">
+
+            <!--
+              ★ ICON IMAGES ★
+              Replace each src="icon-X.jpg" with your own image
+              (e.g. a photo of a SA flag, Brazilian flag, Chinese flag,
+               your phone, your bible).
+              The data-key tells the JS which modal text to show.
+            -->
+
+            <div class="paper-item" data-key="za" onclick="openAboutModal('za')" title="Click to learn more">
+              <div class="pi-img-wrap">
+                <img src="images/south_africa.png" alt="South African flag"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="pi-img-placeholder">icon-sa.jpg</div>
+              </div>
+              <div class="pi-label">Ethnicity</div>
+            </div>
+
+            <div class="paper-item" data-key="br" onclick="openAboutModal('br')" title="Click to learn more">
+              <div class="pi-img-wrap">
+                <img src="images/brazil.png" alt="Brazilian flag"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="pi-img-placeholder">icon-brazil.jpg</div>
+              </div>
+              <div class="pi-label">Portuguese</div>
+            </div>
+
+            <div class="paper-item" data-key="cn" onclick="openAboutModal('cn')" title="Click to learn more">
+              <div class="pi-img-wrap">
+                <img src="images/china.png" alt="Chinese flag"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="pi-img-placeholder">icon-china.jpg</div>
+              </div>
+              <div class="pi-label">Chinese</div>
+            </div>
+
+            <div class="paper-item" data-key="phone" onclick="openAboutModal('phone')" title="Click to learn more">
+              <div class="pi-img-wrap">
+                <img src="images/phone.png" alt="Phone"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="pi-img-placeholder">icon-phone.jpg</div>
+              </div>
+              <div class="pi-label">Hobbies</div>
+            </div>
+
+            <div class="paper-item" data-key="bible" onclick="openAboutModal('bible')" title="Click to learn more">
+              <div class="pi-img-wrap">
+                <img src="images/bible.png" alt="Bible"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                <div class="pi-img-placeholder">icon-bible.jpg</div>
+              </div>
+              <div class="pi-label">Faith</div>
+            </div>
+
+          </div><!-- end .paper-items-grid -->
+
+          <div class="paper-note">✨ click any icon to learn more about me! ✨</div>
+        </div><!-- end .paper-right -->
+
+      </div><!-- end .paper-sheet -->
+    </div><!-- end .paper-wrap -->
+  </section>
+
+
+  <!-- About Me popup modal -->
+  <div class="about-modal" id="aboutModal">
+    <div class="about-modal-inner">
+      <button class="about-modal-close" onclick="closeAboutModal()">✕</button>
+      <div class="about-modal-img-wrap">
+        <img id="aboutModalImg" src="" alt="" style="display:none;" />
+        <div id="aboutModalImgPlaceholder" style="display:none; align-items:center; justify-content:center; width:100%; height:100%; font-size:3rem;">🌸</div>
+      </div>
+      <div class="about-modal-title" id="aboutModalTitle"></div>
+      <p class="about-modal-body" id="aboutModalBody"></p>
+      <div class="about-modal-extra" id="aboutModalExtra"></div>
+    </div>
+  </div>
+
+  <!-- Height joke toast notification -->
+  <div class="height-toast" id="heightToast">
+    😂 I know I'm short... but great things come in small packages! 🌸
+  </div>
+
+
+  <!-- ╔══════════════════════════════════════╗
+       ║               FOOTER                 ║
+       ╚══════════════════════════════════════╝ -->
+  <div class="checker"></div>
+  <div class="footer">
+    <p>✦ Clementine — in-between ✦</p>
+    <p>Made with 🧡 by Mpho · A comic about magic, mystery, and cafés</p>
+  </div>
+
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
